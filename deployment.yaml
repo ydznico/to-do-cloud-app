@@ -16,7 +16,7 @@ spec:
         - name: ecr-registry-secret
       containers:
         - name: todo-app
-          image: 994516184795.dkr.ecr.eu-north-1.amazonaws.com/todo-cloud-app:7a9370a3aac7b6c02fd481a77e167a6cd9e5d32f
+          image: 994516184795.dkr.ecr.eu-north-1.amazonaws.com/todo-cloud-app:2cf95098b59d23821b107368144401855ebdb5d0
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
