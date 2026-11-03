@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #222;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 650px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.06);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p,
+.stat-card p {
+    color: #777;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.stat-card {
+    flex: 1;
+    background: #f0f3ff;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-card h2 {
+    color: #4b62d1;
+    font-size: 26px;
+}
+
+.stat-card p {
+    margin-top: 5px;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid #aab7ff;
+    outline-offset: 2px;
+}
+
+.task-form button {
+    background: #4b62d1;
+    color: white;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.task.done .task-title {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-title {
+    overflow-wrap: anywhere;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.complete-btn {
+    background: #e5f7eb;
+    color: #238747;
+}
+
+.delete-btn {
+    background: #ffe9e9;
+    color: #d33;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 22px;
+    }
+
+    .task {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .task-form {
+        flex-wrap: wrap;
+    }
+
+    .task-form input {
+        flex-basis: 100%;
+    }
+}
